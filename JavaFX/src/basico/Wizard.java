@@ -20,7 +20,7 @@ public class Wizard extends Application {
 		makeStep02();
 		makeStep03();
 		window.setScene(step01);
-		window.setTitle("Wizard");
+		window.setTitle("Wizard :: Step 01");
 		window.show();
 	}
 	
@@ -31,6 +31,7 @@ public class Wizard extends Application {
 		box.setAlignment(Pos.BOTTOM_RIGHT);
 		nextStepButton.setOnAction(e -> {
 			window.setScene(step02);
+			window.setTitle("Wizard :: Step 02");
 		});
 		step01 = new Scene(box,400,400);
 		
@@ -44,9 +45,11 @@ public class Wizard extends Application {
 		box.setAlignment(Pos.BOTTOM_RIGHT);
 		backStepButton.setOnAction(e -> {
 			window.setScene(step01);
+			window.setTitle("Wizard :: Step 01");
 		});
 		nextStepButton.setOnAction(e -> {
 			window.setScene(step03);
+			window.setTitle("Wizard :: Step 03");
 		});
 		step02 = new Scene(box,400,400);
 		
@@ -55,11 +58,13 @@ public class Wizard extends Application {
 		Button backStepButton = new Button("Step 02");
 		Button nextStepButton = new Button("Close the App");
 		HBox box = new HBox();
+		window.setTitle("Wizard :: Step 03");
 		box.getChildren().add(backStepButton);
 		box.getChildren().add(nextStepButton);
 		box.setAlignment(Pos.BOTTOM_RIGHT);
 		backStepButton.setOnAction(e -> {
 			window.setScene(step02);
+			window.setTitle("Wizard :: Step 02");
 		});
 		nextStepButton.setOnAction(e -> {
 			System.exit(0);
