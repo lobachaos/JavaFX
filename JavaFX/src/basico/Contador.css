@@ -1,0 +1,35 @@
+.conteudo {
+	-fx-background-color: black;
+	background-color: black;
+	
+}
+.numero{
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 22px;
+	font-size: 22px;
+	
+}
+.titulo{
+	-fx-text-fill:  #48b2ee;
+	-fx-font-size: 22px;
+	font-size: 36px;
+}
+.botoes{
+	-fx-background-color: #ffffff;
+	background-color: #ffffff;
+	-fx-font-size: 24px;
+	font-size: 24px;
+	-fx-text-fill: #48b2ee;
+	-fx-min-width: 60px;
+	min-width: 60px;
+	-fx-min-height: 60px;
+	min-height: 60px;
+	-fx-background-radius: 30px;
+	
+}
+.verde{
+	-fx-text-fill:  #01fd03;
+}
+.vermelho{
+	-fx-text-fill:  #ee1313;
+}
