@@ -61,13 +61,11 @@ public class Contador extends Application{
 		primaryStage.show();
 	}
 	private void alterarCor() {
-		if(contador == 0) {
-			numero.getStyleClass().remove("verde");
-			numero.getStyleClass().remove("vermelho");
-		}
-		else if(contador > 0 ) {
+		numero.getStyleClass().remove("verde");
+		numero.getStyleClass().remove("vermelho");
+		if(contador > 0 ) {
 			numero.getStyleClass().add("verde");
-		}else {
+		}else if (contador < 0 ){
 			numero.getStyleClass().add("vermelho");
 		}
 	}
